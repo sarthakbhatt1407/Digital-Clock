@@ -22,8 +22,10 @@ setInterval(function () {
   let temp = today.getHours();
   let mins = today.getMinutes().toString().padStart(2, 0);
   let secs = today.getSeconds().toString().padStart(2, 0);
+  var hrs = temp;
   if (temp > 12) {
     var hrs = (temp - 12).toString().padStart(2, 0);
+
     var am_pm = "PM";
   } else {
     var am_pm = "AM";
@@ -32,6 +34,7 @@ setInterval(function () {
   minutes.innerHTML = mins;
   seconds.innerHTML = secs;
   am__pm.innerHTML = am_pm;
+  console.log(hrs);
 }, 1000);
 
 btn.addEventListener("click", function () {
