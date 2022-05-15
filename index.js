@@ -62,7 +62,7 @@ btn.addEventListener("click", function () {
   } else if (dinner.value == currentHour) {
     msgPara.textContent = `get some healthy dinner!!!`;
     resImg.src = "img/Lunch.svg";
-  } else {
+  } else if (sleep.value == currentHour) {
     msgPara.textContent = `get some Sleep!!!`;
     resImg.src = "img/sleep.svg";
   }
